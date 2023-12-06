@@ -8,7 +8,7 @@ body{
 }
 .sidebar{
     width:39%;
-    background-color:blue;
+    background-color:#0a2540;
     height:100vh;
 }
 .tagline{
@@ -42,14 +42,14 @@ select{
     column-gap:10px;
 }
 .btn{
-    background-color:blue;
+    background-color:#0a2540;
     color:white;
     padding:10px;
     border-radius:6px;
     width:150px;
     margin-left:120px;
     margin-top:20px;
-    border:2px solid blue;
+    border:2px #0a2540;
     font-family:'Poppins';
     font-size:18px;
 }
