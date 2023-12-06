@@ -1,0 +1,41 @@
+body{
+	font-family:'Poppins';
+}
+.navbar{
+    text-align:center;
+    position:relative;
+    color:blue;
+    height:100px;
+    font-size:40px;
+}
+.navbar img{
+    position:absolute;
+    left:20px;
+}
+.box{
+	box-shadow: 0px 4px 4px 1px #00000040;
+	position: relative;
+	margin-left: 26%;
+	margin-top: 6%;
+	display: grid;
+	place-items: center;
+	font-size: 27px;
+	font-weight: bold;
+	text-align: center;
+	width: 700px;
+    height: 400px;
+    background-color: #D9D9D9;
+}
+.text{
+	margin-top: 6%;
+}
+.text a{
+	color: black;
+}
+.close{
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
