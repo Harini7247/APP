@@ -1,20 +1,23 @@
 // script.js
 document.addEventListener('DOMContentLoaded', function () {
-    if (Notification.permission !== 'granted') {
-        Notification.requestPermission().then(function (permission) {
-            if (permission === 'granted') {
-                showNotification();
-            }
-        });
-    } else {
-        showNotification();
-    }
+    document.getElementById('myForm').addEventListener('submit', function (event) {
+        event.preventDefault(); // Prevent the form from actually submitting
+
+        if (Notification.permission !== 'granted') {
+            Notification.requestPermission().then(function (permission) {
+                if (permission === 'granted') {
+                    showNotification();
+                }
+            });
+        } else {
+            showNotification();
+        }
+    });
 });
 
 function showNotification() {
-    var notification = new Notification('My Website', {
-        body: 'New notification',
-        icon:null
+    var notification = new Notification('Submission Successful', {
+        body: 'Your form has been submitted successfully!'
     });
 
     notification.onclick = function () {
@@ -22,4 +25,5 @@ function showNotification() {
         notification.close();
     };
 }
+
 
