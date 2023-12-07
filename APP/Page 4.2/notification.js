@@ -1,7 +1,7 @@
 // script.js
 document.addEventListener('DOMContentLoaded', function () {
-    document.getElementById('form-container').addEventListener('submit', function (event) {
-        event.preventDefault(); // Prevent the form from actually submitting
+    document.getElementById('showNotification').addEventListener('click', function (event) {
+        event.preventDefault(); // Prevent the default form submission behavior
 
         if (Notification.permission !== 'granted') {
             Notification.requestPermission().then(function (permission) {
@@ -16,8 +16,8 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function showNotification() {
-    var notification = new Notification('Submission Successful', {
-        body: 'Your form has been submitted successfully!'
+    var notification = new Notification('Complaint Submitted', {
+        body: 'Your water purifier complaint has been successfully submitted!'
     });
 
     notification.onclick = function () {
@@ -25,5 +25,3 @@ function showNotification() {
         notification.close();
     };
 }
-
-
