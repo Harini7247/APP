@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link href="./style.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav role="navigation">
+        <div id="menuToggle">
+    
+    <input type="checkbox" />
+    <span></span>
+    <span></span>
+    <span></span>
+    <ul id="menu">
+      <a href="#"><li>Home</li></a>
+      <a href="#"><li>About us</li></a>
+      <a href="#"><li>Feedback</li></a>  
+    </ul>
+  </div>
+</nav>
+        <p class="title">Hardware components complaint register</p>
+       
+    <div class="box">
+        <p class="text">Please enter the following details to register a complaint</p>
+        <div class="form-container">
+            <form>
+                <select class="category block" name="Block">
+                    <option class="placeholder" disabled selected hidden>Block</option>
+                    <option class="1">A Block</option>
+                    <option class="2">B Block</option>
+                    <option class="3">C Block</option>
+                </select>
+                <select class="category floor" name="Floor">
+                    <option class="placeholder" disabled selected hidden>Floor</option>
+                    <option class="1">1</option>
+                    <option class="2">2</option>
+                    <option class="3">3</option>
+                    <option class="4">4</option>
+                </select>
+                <br>
+                <label for="comment" class="label">Lab/Hall Number:</label>
+                <input type="text" id="text">
+                <div class="radio">
+                    <input type="radio" id="issue" name="issue" value="work">
+                    <label for="work" class="option">Components not working</label><br>
+                    <input type="radio" id="issue" name="issue" value="def">
+                    <label for="def" class="option">System Defect</label><br>
+                    <input type="radio" id="issue" name="issue" value="key">
+                    <label for="key" class="option">Keyboard Problem</label><br>
+                    <input type="radio" id="issue" name="issue" value="other">
+                    <label for="other" class="option">Others</label>
+                </div>
+            </form>
+            <button class="submit" type="submit" value="Submit" id="showNotification" onclick="alertme()">Submit</button>
+        </div>
+    </div>
+    <div class="copyright">
+        <p class="cr"><span>&copy</span>PSG College of Technology </p>
+    </div>
+
+    <script>
+        function alertme(){
+            alert("Your query has been registered successfully and will be processed in 2-3 working days.");
+        }
+    </script>
+</body>
+</html>

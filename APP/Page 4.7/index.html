@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link href="./style.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav role="navigation">
+        <div id="menuToggle">
+    
+    <input type="checkbox" />
+    <span></span>
+    <span></span>
+    <span></span>
+    <ul id="menu">
+      <a href="#"><li>Home</li></a>
+      <a href="#"><li>About us</li></a>
+      <a href="#"><li>Feedback</li></a>  
+    </ul>
+  </div>
+</nav>
+        <p class="title">Classroom availability check</p>
+       
+    <div class="box">
+        <p class="text">Please enter the following details to check for availability</p>
+        <div class="form-container">
+            <form>
+                <select class="category block" name="Block">
+                    <option class="placeholder" disabled selected hidden>Block</option>
+                    <option class="1">A Block</option>
+                    <option class="2">B Block</option>
+                    <option class="3">C Block</option>
+                </select>
+                <select class="category floor" name="Floor">
+                    <option class="placeholder" disabled selected hidden>Floor</option>
+                    <option class="1">1</option>
+                    <option class="2">2</option>
+                    <option class="3">3</option>
+                    <option class="4">4</option>
+                </select>
+                <br>
+                <label for="comment" class="label">Capacity:</label>
+                <input type="text" id="text"><br>
+                <label for="date" class="label">Date of request:</label>
+                <input type="date" id="text">
+                <label for="appt" class="label">Select a time:</label>
+                <input type="time" id="text" name="appt">
+            </form>
+            <button class="submit" type="submit" value="Submit">Check Availability</button>
+        </div>
+    </div>
+    <div class="copyright">
+        <p class="cr"><span>&copy</span>PSG College of Technology </p>
+    </div>
+
+    
+</body>
+</html>
