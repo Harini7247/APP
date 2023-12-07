@@ -1,6 +1,6 @@
 // script.js
 document.addEventListener('DOMContentLoaded', function () {
-    document.getElementById('myForm').addEventListener('submit', function (event) {
+    document.getElementById('form-container').addEventListener('submit', function (event) {
         event.preventDefault(); // Prevent the form from actually submitting
 
         if (Notification.permission !== 'granted') {
